@@ -1,0 +1,207 @@
+@font-face {
+  font-family: valorant;
+  src: url(/assets/font/Valorant_Font.ttf);
+}
+
+::selection {
+  background-color: var(--primary-theme);
+}
+
+:root {
+  --nav-color: #111111;
+  --primary-theme: #ff4655;
+  --secondary-theme: #ece8e1;
+  --info-theme: #ece8e1;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* ================== navbar ===================== */
+.nav {
+  width: 100%;
+  background-color: var(--nav-color);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 100;
+}
+
+.nav__left {
+  flex: 0.4;
+}
+
+.nav__left > img {
+  border-radius: 999px;
+  object-fit: contain;
+  max-width: 100px;
+  margin-left: 20px;
+  width: 40px;
+}
+
+.nav__middle {
+  display: flex;
+  justify-content: center;
+  flex: 0.2;
+}
+
+.nav__middle > h1 {
+  color: #f1f1f1;
+  font-family: valorant, sans-serif;
+  font-weight: 500;
+}
+
+.nav__right {
+  display: flex;
+  margin-right: 20px;
+  height: 100%;
+  flex: 0.4;
+  justify-content: flex-end;
+}
+
+.nav__right > a {
+  color: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  width: 100px;
+  padding-top: 22px;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  transition: border-bottom 200ms linear;
+}
+
+.nav__right > a:hover {
+  border-bottom: 5px solid var(--primary-theme);
+  cursor: url("/assets/image/crosshair-1.png"), auto !important;
+}
+
+.nav__hamburger {
+  width: 45px;
+  height: 40px;
+  margin-right: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.nav__hamburger > div {
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.nav__hamburger > div::before,
+.nav__hamburger > div::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.nav__hamburger > div:before {
+  transform: translateY(-8px);
+}
+
+.nav__hamburger > div:after {
+  transform: translateY(8px);
+}
+
+.nav__hamburger-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20px;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* toggle on */
+.nav__hamburger .nav__hamburger-toggle:checked + .nav__hamburger > div {
+  opacity: 0;
+}
+
+/* ================== landing ===================== */
+.landing {
+  background: #666666;
+  position: relative;
+  height: 98vh;
+  width: 100%;
+  margin-top: 60px;
+  clip-path: polygon(100% 0, 100% 90%, 3% 90%, 0 83%, 0 0);
+  overflow: hidden;
+}
+
+.landing:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 150px;
+  height: 100vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.landing__vid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 160px;
+  height: 100vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.landing__vid:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 450px;
+  height: 100vh;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 1000px) {
+  .nav__hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .nav__left {
+    flex: 0.2;
+  }
+
+  .nav__middle {
+    flex: 0.4;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__right {
+    display: none;
+  }
+}
