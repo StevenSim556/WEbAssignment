@@ -143,7 +143,6 @@ body {
 
 /* ================== landing ===================== */
 .landing {
-  background: #666666;
   position: relative;
   height: 98vh;
   width: 100%;
@@ -164,6 +163,7 @@ body {
 
 .landing__vid:before {
   content: "";
+  color: var(--primary-theme);
   position: absolute;
   top: 0;
   left: 160px;
@@ -203,5 +203,17 @@ body {
 
   .nav__right {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing__vid > video {
+    display: none;
+  }
+
+  .landing {
+    background-image: url("/assets//image/valorant.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
   }
 }
