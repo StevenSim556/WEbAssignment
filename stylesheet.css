@@ -144,11 +144,20 @@ body {
 /* ================== landing ===================== */
 .landing {
   position: relative;
-  height: 98vh;
   width: 100%;
   margin-top: 60px;
   clip-path: polygon(100% 0, 100% 90%, 3% 90%, 0 83%, 0 0);
   overflow: hidden;
+}
+
+.landing__overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .landing:after {
@@ -182,8 +191,16 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.landing__vid {
+  display: flex;
+}
+
 @media (min-width: 1000px) {
   .nav__hamburger {
+    display: none;
+  }
+  .landing__vid > .vid2,
+  .landing__vid > .vid3 {
     display: none;
   }
 }
@@ -204,16 +221,28 @@ body {
   .nav__right {
     display: none;
   }
-}
 
-@media (max-width: 500px) {
-  .landing__vid > video {
+  .landing__vid > .vid1,
+  .landing__vid > .vid3 {
     display: none;
   }
 
-  .landing {
-    background-image: url("/assets//image/valorant.jpg");
-    background-position: cover;
-    background-repeat: no-repeat;
+  .landing__vid:after {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .landing__vid > .vid1,
+  .landing__vid > .vid2 {
+    display: none;
+  }
+
+  .landing__vid > .vid3 {
+    display: flex;
+  }
+
+  .landing__vid:before {
+    display: none;
   }
 }
