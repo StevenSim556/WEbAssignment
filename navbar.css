@@ -99,6 +99,7 @@ body {
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
+  z-index: 10000000;
 }
 
 .nav__hamburger > #hamburger {
@@ -109,6 +110,7 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  z-index: 10000000;
 }
 
 .nav__hamburger > label {
@@ -119,6 +121,7 @@ body {
   height: 3px;
   border-radius: 5px;
   background: #fff;
+  z-index: 10000000;
 }
 
 .nav__hamburger > label::before,
@@ -140,6 +143,37 @@ body {
   transform: translateY(8px);
 }
 
+.nav__menu {
+  visibility: hidden;
+  opacity: 1;
+  font-size: 2.5rem;
+  height: 0;
+  width: 0%;
+  background-color: #000000;
+  transition: transform 300ms ease-in-out;
+}
+
+.nav__menu > a {
+  color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  width: 120px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  transition: all 200ms;
+}
+
+.nav__menu > a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.03);
+}
+
 /* animate hamburger */
 .nav__hamburger > #hamburger:checked + label {
   width: 0;
@@ -153,6 +187,21 @@ body {
 #hamburger:checked + label::after {
   transform: rotate(-45deg) translate(0);
   left: 19%;
+}
+
+#hamburger:checked ~ .nav__menu {
+  visibility: visible;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
 }
 
 @media (min-width: 1000px) {
