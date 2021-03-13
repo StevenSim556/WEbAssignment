@@ -60,10 +60,7 @@
 
 @media (max-width: 999px) {
   .landing__vid > .vid1,
-  .landing__vid > .vid3 {
-    display: none;
-  }
-
+  .landing__vid > .vid3,
   .landing__vid:after {
     display: none;
   }
@@ -71,15 +68,12 @@
 
 @media (max-width: 690px) {
   .landing__vid > .vid1,
-  .landing__vid > .vid2 {
+  .landing__vid > .vid2,
+  .landing__vid:before {
     display: none;
   }
 
   .landing__vid > .vid3 {
     display: flex;
-  }
-
-  .landing__vid:before {
-    display: none;
   }
 }

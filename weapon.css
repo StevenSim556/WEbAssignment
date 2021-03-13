@@ -1,0 +1,257 @@
+.weapons {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.weapons::before {
+  content: "";
+  background-image: url(assets/image/range.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: -100;
+}
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  height: calc(100vh - 140px);
+  padding: 40px 160px;
+  text-transform: uppercase;
+  color: #ffffff;
+  overflow-y: hidden;
+}
+
+.weapons__mid {
+  display: flex;
+}
+
+.weapons__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 0 8px 8px;
+  background: rgba(119, 117, 117, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 5px 0;
+  opacity: 0.78;
+}
+
+.weapons__card:hover {
+  background-color: #aa896f;
+  cursor: pointer;
+}
+
+.weapons__card:hover .weapons__info {
+  background-color: red;
+}
+
+.weapons__class {
+  padding: 4px 0;
+  background: rgba(15, 174, 15, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 10px auto 5px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+}
+
+/* sidearm */
+.weapons__sidearms {
+  flex: 0.2;
+  flex-basis: 100px;
+  overflow-y: hidden;
+}
+
+.weapons__sidearms > .weapons__card {
+  height: 100px;
+}
+
+/* mid > eco */
+.weapons__mid {
+  display: flex;
+  flex-basis: 800px;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+
+.weapons__mid > .weapons__eco {
+  flex: 0.3;
+  margin-right: 8px;
+  overflow-y: hidden;
+}
+
+/* mid > eco > smg */
+.weapons__smg > .weapons__card {
+  height: 121px;
+}
+
+/* mid > eco > shotgun */
+.weapons__shotgun > .weapons__card {
+  height: 115px;
+}
+
+/* mid > rifles */
+.weapons__mid > .weapons__rifles {
+  flex: 0.33;
+  margin: 0 8px 0 8px;
+  overflow-y: hidden;
+}
+
+.weapons__mid > .weapons__rifles > .weapons__card {
+  height: 129px;
+}
+
+/* mid > long */
+.weapons__mid > .weapons__long {
+  flex: 0.37;
+  margin-left: 8px;
+  overflow-y: hidden;
+}
+
+/* long > sniper */
+.weapons__long > .weapons__sniper > .weapons__card {
+  height: 125px;
+}
+
+/* long > heavy */
+.weapons__long > .weapons__heavy > .weapons__card {
+  height: 110.5px;
+}
+
+/* shields */
+.weapons__shields {
+  width: 160px;
+  overflow-y: hidden;
+}
+
+.weapons__shields > .weapons__card {
+  height: 272px;
+}
+
+/* card fonts */
+.weapons__card > p {
+  font-size: 16px;
+}
+
+.weapons__card > p:last-child {
+  font-size: 10px;
+}
+
+/* weapon image */
+.classic {
+  background: url(/assets/image/classic.png) no-repeat center center;
+  background-size: 80px;
+}
+
+.shorty {
+  background: url(/assets/image/shorty.png) no-repeat center center;
+  background-size: 80px;
+}
+
+.frenzy {
+  background: url(/assets/image/frenzy.png) no-repeat center center;
+  background-size: 70px;
+}
+
+.ghost {
+  background: url(/assets/image/ghost.png) no-repeat center center;
+  background-size: 90px;
+}
+
+.sheriff {
+  background: url(/assets/image/sheriff.png) no-repeat center center;
+  background-size: 80px;
+}
+
+.stinger {
+  background: url(/assets/image/stinger.png) no-repeat center center;
+  background-size: 140px;
+}
+
+.spectre {
+  background: url(/assets/image/spectre.png) no-repeat center center;
+  background-size: 140px;
+}
+
+.bucky {
+  background: url(/assets/image/bucky.png) no-repeat center center;
+  background-size: 160px;
+}
+
+.judge {
+  background: url(/assets/image/judge.png) no-repeat center center;
+  background-size: 160px;
+}
+
+.bulldog {
+  background: url(/assets/image/bulldog.png) no-repeat center center;
+  background-size: 160px;
+}
+
+.guardian {
+  background: url(/assets/image/guardian.png) no-repeat center center;
+  background-size: 180px;
+}
+
+.phantom {
+  background: url(/assets/image/phantom.png) no-repeat center center;
+  background-size: 160px;
+}
+
+.vandal {
+  background: url(/assets/image/vandal.png) no-repeat center center;
+  background-size: 160px;
+}
+
+.marshal {
+  background: url(/assets/image/marshal.png) no-repeat center center;
+  background-size: 200px;
+}
+
+.operator {
+  background: url(/assets/image/operator.png) no-repeat center center;
+  background-size: 200px;
+}
+
+.ares {
+  background: url(/assets/image/ares.png) no-repeat center center;
+  background-size: 200px;
+}
+
+.odin {
+  background: url(/assets/image/odin.png) no-repeat center center;
+  background-size: 200px;
+}
+
+.light {
+  background: url(/assets/image/light.png) no-repeat center center;
+  background-size: 100px;
+}
+
+.heavy {
+  background: url(/assets/image/heavy.png) no-repeat center center;
+  background-size: 100px;
+}
+
+@media (max-width: 1390px) {
+  .container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1168px) {
+  .container {
+    padding: 20px;
+  }
+}
