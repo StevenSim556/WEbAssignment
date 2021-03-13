@@ -101,29 +101,58 @@ body {
   position: relative;
 }
 
-.nav__hamburger > div {
-  width: 28px;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 6px;
+.nav__hamburger > #hamburger {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.nav__hamburger > div::before,
-.nav__hamburger > div::after {
+.nav__hamburger > label {
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.nav__hamburger > label::before,
+.nav__hamburger > label::after {
   content: "";
   position: absolute;
-  width: 28px;
+  width: 26px;
   height: 3px;
-  background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 600ms;
 }
 
-.nav__hamburger > div:before {
+.nav__hamburger > label::before {
   transform: translateY(-8px);
 }
 
-.nav__hamburger > div:after {
+.nav__hamburger > label::after {
   transform: translateY(8px);
+}
+
+/* animate hamburger */
+.nav__hamburger > #hamburger:checked + label {
+  width: 0;
+}
+
+#hamburger:checked + label::before {
+  transform: rotate(45deg) translate(0);
+  left: 19%;
+}
+
+#hamburger:checked + label::after {
+  transform: rotate(-45deg) translate(0);
+  left: 19%;
 }
 
 @media (min-width: 1000px) {
