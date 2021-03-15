@@ -1,0 +1,216 @@
+#agent {
+  margin-top: 60px;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-y: hidden;
+}
+
+.agent__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  scroll-snap-align: start;
+  height: calc(100vh - 60px);
+  overflow-y: hidden;
+  background: url(assets/image/agent-background.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1000;
+}
+
+/* agent display */
+.agent__ability::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  z-index: -500;
+  animation: agent 2000ms linear infinite alternate;
+}
+
+.breach-bg::after {
+  background: url(assets/image/breach-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.brimstone-bg::after {
+  background: url(assets/image/brimstone-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.cypher-bg::after {
+  background: url(assets/image/cypher-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.jett-bg::after {
+  background: url(assets/image/jett-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.phoenix-bg::after {
+  background: url(assets/image/phoenix-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.raze-bg::after {
+  background: url(assets/image/raze-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.reyna-bg::after {
+  background: url(assets/image/reyna-bg.png) no-repeat center center;
+  background-size: 450px;
+}
+
+.sova-bg::after {
+  background: url(assets/image/sova-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.sage-bg::after {
+  background: url(assets/image/sage-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.omen-bg::after {
+  background: url(assets/image/omen-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.viper-bg::after {
+  background: url(assets/image/viper-bg.png) no-repeat center center;
+  background-size: contain;
+}
+
+.agent__ability {
+  align-self: flex-end;
+}
+
+.agent__selection {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.agent__selection-avatar {
+  padding: 28px;
+  margin: 0 3px;
+  background: rgba(119, 117, 117, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.agent__selection-avatar > form > button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button.active:focus,
+button:active:focus,
+button:focus,
+:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.agent__selection-avatar:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #e6edb6;
+}
+
+.brimstone {
+  background: url(/assets/image/brimstone.png) no-repeat center center;
+  background-size: cover;
+}
+
+.breach {
+  background: url(/assets/image/breach.png) no-repeat center center;
+  background-size: cover;
+}
+
+.jett {
+  background: url(/assets/image/jett.png) no-repeat center center;
+  background-size: cover;
+}
+
+.raze {
+  background: url(/assets/image/raze.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sova {
+  background: url(/assets/image/sova.png) no-repeat center center;
+  background-size: cover;
+}
+
+.reyna {
+  background: url(/assets/image/reyna.png) no-repeat center center;
+  background-size: cover;
+}
+
+.sage {
+  background: url(/assets/image/sage.png) no-repeat center center;
+  background-size: cover;
+}
+
+.omen {
+  background: url(/assets/image/omen.png) no-repeat center center;
+  background-size: cover;
+}
+
+.cypher {
+  background: url(/assets/image/cypher.png) no-repeat center center;
+  background-size: cover;
+}
+
+.phoenix {
+  background: url(/assets/image/phoenix.png) no-repeat center center;
+  background-size: cover;
+}
+
+.viper {
+  background: url(/assets/image/viper.png) no-repeat center center;
+  background-size: cover;
+}
+
+@keyframes agent {
+  0% {
+    transform: translate(-50%, -47%);
+  }
+
+  50% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-50%, -55%);
+  }
+}
