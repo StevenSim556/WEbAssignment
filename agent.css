@@ -326,3 +326,43 @@ button:focus,
     transform: translate(-50%, -55%);
   }
 }
+
+@media (max-width: 1168px) {
+  .agent__ability::after {
+    left: 20%;
+  }
+}
+
+@media (max-width: 792px) {
+  .agent__ability::after {
+    top: 68%;
+    width: 350px;
+    height: 350px;
+  }
+
+  .agent__selection {
+    display: flex;
+    width: 300px;
+    left: 70%;
+  }
+
+  .agent__ability {
+    padding: 10px;
+  }
+
+  .agent__info > h2 {
+    font-size: 16px;
+  }
+
+  .agent__info > p {
+    font-size: 12px;
+  }
+
+  .agent__ability-top > p {
+    font-size: 12px;
+  }
+
+  .agent__ability-top > h1 {
+    font-size: 26px;
+  }
+}
