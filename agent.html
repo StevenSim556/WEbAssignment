@@ -105,37 +105,881 @@
         </div>
       </div>
       <div id="breach" class="agent__container">
-        <div class="agent__ability breach-bg">fking make u blind</div>
+        <div class="agent__ability breach-bg">
+          <div class="agent__ability-top">
+            <p>initiator</p>
+            <h1>breach</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="breachRadio" id="breach-info" checked />
+              <label for="breach-info">info</label>
+              <label for="breach-info" class="agent-info">
+                <img src="assets/image/initiator-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>initiator</h2>
+                <p>
+                  Initiators challenge angles by setting up their team to enter
+                  contested ground and push defenders away
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="breachRadio" id="breach-c" />
+              <label for="breach-c">c</label>
+              <label for="breach-c" class="agent-c">
+                <img src="assets/image/breach-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>aftershock</h2>
+                <p>
+                  Equip a fusion charge. Fire the charge to set a slow-acting
+                  burst through the wall. The burst does heavy damage to anyone
+                  caught in its area.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="breachRadio" id="breach-q" />
+              <label for="breach-q">q</label>
+              <label for="breach-q" class="agent-q">
+                <img src="assets/image/breach-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>flashpoint</h2>
+                <p>
+                  Equip a blinding charge. Fire the charge to set a fast-acting
+                  burst through the wall. The charge detonates to blind all
+                  players looking at it.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="breachRadio" id="breach-e" />
+              <label for="breach-e">e</label>
+              <label for="breach-e" class="agent-e">
+                <img src="assets/image/breach-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>fault line</h2>
+                <p>
+                  Equip a seismic blast. Hold Fire to increase the distance.
+                  Release to set off the quake, dazing all players in its zone
+                  and in a line up to the zone.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="breachRadio" id="breach-x" />
+              <label for="breach-x">x</label>
+              <label for="breach-x" class="agent-x">
+                <img src="assets/image/breach-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>rolling thunder</h2>
+                <p>
+                  Equip a seismic charge. Fire to send a cascading quake through
+                  all terrain in a large cone. The quake dazes and knocks up
+                  anyone caught in it.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="brimstone" class="agent__container">
-        <div class="agent__ability brimstone-bg">fking make u blind</div>
+        <div class="agent__ability brimstone-bg">
+          <div class="agent__ability-top">
+            <p>controller</p>
+            <h1>brimstone</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="brimstoneRadio" id="brimstone-info" checked />
+              <label for="brimstone-info">info</label>
+              <label for="brimstone-info" class="agent-info">
+                <img src="assets/image/controller-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>Controller</h2>
+                <p>
+                  Controllers are experts in slicing up dangerous territory to set their team up for success.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="brimstoneRadio" id="brimstone-c" />
+              <label for="brimstone-c">c</label>
+              <label for="brimstone-c" class="agent-c">
+                <img src="assets/image/brimstone-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>stim beacon</h2>
+                <p>
+                  Equip a Stim Beacon. Fire to toss the stim beacon in front of Brimstone. Upon landing, the stim beacon will create a field that grants players RapidFire. RapidFire increases fire rate, reload speed, weapon swap speed, and recoil recovery by 15%.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="brimstoneRadio" id="brimstone-q" />
+              <label for="brimstone-q">q</label>
+              <label for="brimstone-q" class="agent-q">
+                <img src="assets/image/brimstone-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>incendiary</h2>
+                <p>
+                 Equip an Incendiary grenade launcher. Fire to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="brimstoneRadio" id="brimstone-e" />
+              <label for="brimstone-e">e</label>
+              <label for="brimstone-e" class="agent-e">
+                <img src="assets/image/brimstone-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>sky smoke</h2>
+                <p>
+                  Equip a tactical map. Fire to set locations where Brimstone's smoke clouds will land. Alternate Fire to confirm, launching long-lasting smoke clouds that block vision in the selected area.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="brimstoneRadio" id="brimstone-x" />
+              <label for="brimstone-x">x</label>
+              <label for="brimstone-x" class="agent-x">
+                <img src="assets/image/brimstone-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>orbital strike</h2>
+                <p>
+                  
+Equip a tactical map. Fire to launch a lingering orbital strike laser at the selected location, which deals heavy damage over-time to players in the area.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
       <div id="cypher" class="agent__container">
-        <div class="agent__ability cypher-bg">fking make u blind</div>
+        <div class="agent__ability cypher-bg"><div class="agent__ability-top">
+            <p>sentinel</p>
+            <h1>cypher</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="cypherRadio" id="cypher-info" checked />
+              <label for="cypher-info">info</label>
+              <label for="cypher-info" class="agent-info">
+                <img src="assets/image/sentinel-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>sentinel</h2>
+                <p>
+                  Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="cypherRadio" id="cypher-c" />
+              <label for="cypher-c">c</label>
+              <label for="cypher-c" class="agent-c">
+                <img src="assets/image/cypher-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>trapwire</h2>
+                <p>
+                 Equip a trapwire. Fire to place a destructible and covert tripware at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, and dazed after a short period if they do not destroy the device in time. This ability can be picked up and redeployed if not yet triggered. It can be destroyed by shooting it once with any gun. Disabled and revealed upon death.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="cypherRadio" id="cypher-q" />
+              <label for="cypher-q">q</label>
+              <label for="cypher-q" class="agent-q">
+                <img src="assets/image/cypher-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>cyber cage</h2>
+                <p>
+                  
+Instantly toss a cyber cage in front of Cypher. Activate from any distance to create a temporary zone that blocks vision.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="cypherRadio" id="cypher-e" />
+              <label for="cypher-e">e</label>
+              <label for="cypher-e" class="agent-e">
+                <img src="assets/image/cypher-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>spycam</h2>
+                <p>
+                  Equip a spycam. Fire to place the spycam at the targeted location. REUSE this ability to take control of the camera's view. While in control of the camera, Fire to shoot a tracking dart. The dart is removable and will periodically reveal the location of the enemy hit. It can be destroyed by shooting it once with any gun. Disabled and revealed upon death.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="cypherRadio" id="cypher-x" />
+              <label for="cypher-x">x</label>
+              <label for="cypher-x" class="agent-x">
+                <img src="assets/image/cypher-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>neutral theft</h2>
+                <p>
+                  
+Use on a fresh enemy corpse to throw Cypher's hat. After a brief delay, all enemy players' locations will be revealed once.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="jett" class="agent__container">
-        <div class="agent__ability jett-bg">fking make u blind</div>
+        <div class="agent__ability jett-bg"><div class="agent__ability-top">
+            <p>duelist</p>
+            <h1>jett</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="jettRadio" id="jett-info" checked />
+              <label for="jett-info">info</label>
+              <label for="jett-info" class="agent-info">
+                <img src="assets/image/duelist-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>duelist</h2>
+                <p>
+                  Duelists are self-sufficent fraggers who their team expects, through abilites and skills, to get high frags and seek out engagements first.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="jettRadio" id="jett-c" />
+              <label for="jett-c">c</label>
+              <label for="jett-c" class="agent-c">
+                <img src="assets/image/jett-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>cloudburst</h2>
+                <p>
+                  Instantly throw a projectile that expands into a brief vision cloud on impact with a surface. Hold the ability key to curve the cloud in the direction of your crosshair.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="jettRadio" id="jett-q" />
+              <label for="jett-q">q</label>
+              <label for="jett-q" class="agent-q">
+                <img src="assets/image/jett-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>updraft</h2>
+                <p>
+                  Instantly propel Jett high into the air.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="jettRadio" id="jett-e" />
+              <label for="jett-e">e</label>
+              <label for="jett-e" class="agent-e">
+                <img src="assets/image/jett-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>tailwind</h2>
+                <p>
+                  
+Instantly propel in the direction she is moving. If Jett is standing still, she will propel forward.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="jettRadio" id="jett-x" />
+              <label for="jett-x">x</label>
+              <label for="jett-x" class="agent-x">
+                <img src="assets/image/jett-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>blade storm</h2>
+                <p>
+                  
+Equip a set of 5 highly accurate throwing knives. Fire to throw a single knife. Alternative Fire to throw all remaining daggers at once. Restocks upon killing an enemy.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="phoenix" class="agent__container">
-        <div class="agent__ability phoenix-bg">fking make u blind</div>
+        <div class="agent__ability phoenix-bg"><div class="agent__ability-top">
+            <p>duelist</p>
+            <h1>phoenix</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="phoenixRadio" id="phoenix-info" checked />
+              <label for="phoenix-info">info</label>
+              <label for="phoenix-info" class="agent-info">
+                <img src="assets/image/duelist-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>duelist</h2>
+                <p>
+                   Duelists are self-sufficent fraggers who their team expects, through abilites and skills, to get high frags and seek out engagements first.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="phoenixRadio" id="phoenix-c" />
+              <label for="phoenix-c">c</label>
+              <label for="phoenix-c" class="agent-c">
+                <img src="assets/image/phoenix-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>blaze</h2>
+                <p>
+                 Equip a flame wall. Fire to create a line of flames that moves forward creating a wall that blocks vision and damages players passing through it. Hold Fire to bend the wall in the direction of your crosshair.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="phoenixRadio" id="phoenix-q" />
+              <label for="phoenix-q">q</label>
+              <label for="phoenix-q" class="agent-q">
+                <img src="assets/image/phoenix-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>curveball</h2>
+                <p>
+                  Equip a flare orb that takes a curving path and detonates shortly after throwing, impairing vision. Fire to curve the flare orb to the left, detonating and blinding any player who sees the orb. Alternate fire to curve the flare orb to the right.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="phoenixRadio" id="phoenix-e" />
+              <label for="phoenix-e">e</label>
+              <label for="phoenix-e" class="agent-e">
+                <img src="assets/image/phoenix-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>hot hands</h2>
+                <p>
+                  
+Equip a fireball. Fire to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="phoenixRadio" id="phoenix-x" />
+              <label for="phoenix-x">x</label>
+              <label for="phoenix-x" class="agent-x">
+                <img src="assets/image/phoenix-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>run it back</h2>
+                <p>
+                  
+Instantly place a marker at Phoenix's location. When this ability is active, if you die or if the time expires, the ability ends and sends Phoenix back to the starting location.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="raze" class="agent__container">
-        <div class="agent__ability raze-bg">fking make u blind</div>
+        <div class="agent__ability raze-bg"><div class="agent__ability-top">
+            <p>duelist</p>
+            <h1>raze</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="razeRadio" id="raze-info" checked />
+              <label for="raze-info">info</label>
+              <label for="raze-info" class="agent-info">
+                <img src="assets/image/duelist-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>duelist</h2>
+                <p>
+                   Duelists are self-sufficent fraggers who their team expects, through abilites and skills, to get high frags and seek out engagements first.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="razeRadio" id="raze-c" />
+              <label for="raze-c">c</label>
+              <label for="raze-c" class="agent-c">
+                <img src="assets/image/raze-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>boom bot</h2>
+                <p>
+                Equip a Boom Bot. Fire to deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them. The Boom Bot can be destroyed by enemies.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="razeRadio" id="raze-q" />
+              <label for="raze-q">q</label>
+              <label for="raze-q" class="agent-q">
+                <img src="assets/image/raze-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>blask pack</h2>
+                <p>
+                  Instantly throw a Blast Pack that will stick to surfaces. Re-use to detonate, damaging and knocking back anything hit. Blast Pack will not damage Raze, but she can still suffer fall damage.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="razeRadio" id="raze-e" />
+              <label for="raze-e">e</label>
+              <label for="raze-e" class="agent-e">
+                <img src="assets/image/raze-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>paint shell</h2>
+                <p>
+                  
+Equip a cluster grenade. Fire to throw the grenade, which deals damage and creates sub-munitions, each exploding and dealing further damage.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="razeRadio" id="raze-x" />
+              <label for="raze-x">x</label>
+              <label for="raze-x" class="agent-x">
+                <img src="assets/image/raze-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>showstopper</h2>
+                <p>
+                  Equip a single-use Rocket Launcher and light its fuse. Fire to launch a rocket, which travels in a straight line and explodes on contact, dealing high damage to enemies caught in its blast radius.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="reyna" class="agent__container">
-        <div class="agent__ability reyna-bg">fking make u blind</div>
+        <div class="agent__ability reyna-bg"><div class="agent__ability-top">
+            <p>duelist</p>
+            <h1>reyna</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="reynaRadio" id="reyna-info" checked />
+              <label for="reyna-info">info</label>
+              <label for="reyna-info" class="agent-info">
+                <img src="assets/image/duelist-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>duelist</h2>
+                <p>
+                       Duelists are self-sufficent fraggers who their team expects, through abilites and skills, to get high frags and seek out engagements first.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="reynaRadio" id="reyna-c" />
+              <label for="reyna-c">c</label>
+              <label for="reyna-c" class="agent-c">
+                <img src="assets/image/reyna-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>leer</h2>
+                <p>
+                  
+Equip an ethereal eye. Activate to cast the eye a short distance forward at a fixed range, passing through obstructions in the way. The eye will Nearsight all enemies who can see it. The eye will disappear either after two seconds or receiving any bullet damage.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="reynaRadio" id="reyna-q" />
+              <label for="reyna-q">q</label>
+              <label for="reyna-q" class="agent-q">
+                <img src="assets/image/reyna-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>devour</h2>
+                <p>
+                  nstantly consume a nearby Soul Orb, disabling Reyna's ability to fire for 1 second and creating a tether between Reyna and the Soul Orb whilst rapidly healing for 100 health over 3 seconds. The tether will break if it is caught between any obstacle for more than a second, ending the healing prematurely. This ability can Overheal though health exceeding 100 but cannot exceed 150 health (including shields). 
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="reynaRadio" id="reyna-e" />
+              <label for="reyna-e">e</label>
+              <label for="reyna-e" class="agent-e">
+                <img src="assets/image/reyna-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>dismiss</h2>
+                <p>
+                  
+Instantly consume a nearby Soul Orb, becoming intangible for 2 seconds and gaining a burst of movement speed for the first second of the duration. Reyna can change what weapon she will equip whilst Dismiss is active, always equipping the last weapon selected during Dismiss. If an enemy damaged by Reyna is killed within 3 seconds by another player/stimuli then a Soul Orb will be dropped, allowing her to Dismiss. If Empress is active, Reyna also becomes invisible.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="reynaRadio" id="reyna-x" />
+              <label for="reyna-x">x</label>
+              <label for="reyna-x" class="agent-x">
+                <img src="assets/image/reyna-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>empress</h2>
+                <p>
+                 Enter a frenzy for 30 seconds, increasing firing, equip and reload speeds by 15%. Grants infinite charges of Soul Harvest abilities. Scoring a kill fully refreshes the duration.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="sova" class="agent__container">
-        <div class="agent__ability sova-bg">fking make u blind</div>
+        <div class="agent__ability sova-bg"><div class="agent__ability-top">
+            <p>initiator</p>
+            <h1>sova</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="sovaRadio" id="sova-info" checked />
+              <label for="sova-info">info</label>
+              <label for="sova-info" class="agent-info">
+                <img src="assets/image/initiator-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>initiator</h2>
+                <p>
+                  Initiators challenge angles by setting up their team to enter
+                  contested ground and push defenders away
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="sovaRadio" id="sova-c" />
+              <label for="sova-c">c</label>
+              <label for="sova-c" class="agent-c">
+                <img src="assets/image/sova-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>shock bolt</h2>
+                <p>
+                  Equip a bow with shock bolt. Fire to send the explosive bolt forward detonating upon collision and damaging players nearby. Hold Fire to extend the range of the projectile. Alternate Fire to add up to two bounces to this arrow.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sovaRadio" id="sova-q" />
+              <label for="sova-q">q</label>
+              <label for="sova-q" class="agent-q">
+                <img src="assets/image/sova-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>owl drone</h2>
+                <p>
+                  Equip an owl drone. Fire to deploy and take control of movement of the drone. While in control of the drone, Fire to shoot a marking dart. This dart will periodically reveal the location of its target.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sovaRadio" id="sova-e" />
+              <label for="sova-e">e</label>
+              <label for="sova-e" class="agent-e">
+                <img src="assets/image/sova-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>recon bolt</h2>
+                <p>
+                  Equip a bow with recon bolt. Fire to send the bolt forward activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. Hold Fire to extend the range of the projectile. Alternate Fire to add up to two bounces to this arrow.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sovaRadio" id="sova-x" />
+              <label for="sova-x">x</label>
+              <label for="sova-x" class="agent-x">
+                <img src="assets/image/sova-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>hunter's fury</h2>
+                <p>
+                 
+Equip a bow with three long-range, wall-piercing energy blasts. Fire to release a blast in a line in front of Sova dealing damage and revealing the location of enemies caught in the line.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="sage" class="agent__container">
-        <div class="agent__ability sage-bg">fking make u blind</div>
+        <div class="agent__ability sage-bg"><div class="agent__ability-top">
+            <p>sentinel</p>
+            <h1>sage</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="sageRadio" id="sage-info" checked />
+              <label for="sage-info">info</label>
+              <label for="sage-info" class="agent-info">
+                <img src="assets/image/sentinel-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>sentinel</h2>
+                <p>
+                   Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="sageRadio" id="sage-c" />
+              <label for="sage-c">c</label>
+              <label for="sage-c" class="agent-c">
+                <img src="assets/image/sage-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>barrier orb</h2>
+                <p>
+                  
+Equip a barrier orb. Fire places a solid wall. Alternate fire rotates the targeter.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sageRadio" id="sage-q" />
+              <label for="sage-q">q</label>
+              <label for="sage-q" class="agent-q">
+                <img src="assets/image/sage-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>slow orb</h2>
+                <p>
+                 Equip a Slowing Orb. Fire to launch the Orb, which expands upon hitting the ground, creating a zone that slows players who walk on it.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sageRadio" id="sage-e" />
+              <label for="sage-e">e</label>
+              <label for="sage-e" class="agent-e">
+                <img src="assets/image/sage-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>healing orb</h2>
+                <p>
+                  Equip a healing orb. Fire with your crosshairs over a damaged ally to activate a heal-over-time on them. Alternate fire while Sage is damaged to activate a self heal-over-time. The heal will stop upon taking damage.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="sageRadio" id="sage-x" />
+              <label for="sage-x">x</label>
+              <label for="sage-x" class="agent-x">
+                <img src="assets/image/sage-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>resurrection</h2>
+                <p>
+                  
+Equip a resurrection ability. Fire with your crosshairs placed over an ally's corpse to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="omen" class="agent__container">
-        <div class="agent__ability omen-bg">fking make u blind</div>
+        <div class="agent__ability omen-bg"><div class="agent__ability-top">
+            <p>controller</p>
+            <h1>omen</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="omenRadio" id="omen-info" checked />
+              <label for="omen-info">info</label>
+              <label for="omen-info" class="agent-info">
+                <img src="assets/image/controller-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>controller</h2>
+                <p>
+                Controllers are experts in slicing up dangerous territory to set their team up for success.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="omenRadio" id="omen-c" />
+              <label for="omen-c">c</label>
+              <label for="omen-c" class="agent-c">
+                <img src="assets/image/omen-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>shorouded step</h2>
+                <p>
+                  
+Equip a shadow walk ability and see its range indicator. Fire to begin a brief channel, then teleport to the marked location. Enemies can hear a sound cue at your original location.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="omenRadio" id="omen-q" />
+              <label for="omen-q">q</label>
+              <label for="omen-q" class="agent-q">
+                <img src="assets/image/omen-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>paranoia</h2>
+                <p>
+                 
+Instantly fire a shadow projectile forward, briefly reducing the vision range of all players it touches. This projectile can pass through walls.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="omenRadio" id="omen-e" />
+              <label for="omen-e">e</label>
+              <label for="omen-e" class="agent-e">
+                <img src="assets/image/omen-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>dark cover</h2>
+                <p>
+                  
+Equip a shadow orb and see its range indicator. Fire to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. Hold Alternate Fire while targeting to move the marker further away. Hold the ability key with targeting to move the marker closer.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="omenRadio" id="omen-x" />
+              <label for="omen-x">x</label>
+              <label for="omen-x" class="agent-x">
+                <img src="assets/image/omen-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>from the shadows</h2>
+                <p>
+                  Equip a tactical map. Fire to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
       <div id="viper" class="agent__container">
-        <div class="agent__ability viper-bg">poison the fk out of u</div>
+        <div class="agent__ability viper-bg"><div class="agent__ability-top">
+            <p>controller</p>
+            <h1>viper</h1>
+          </div>
+          <div class="agent__ability-bottom">
+            <div class="agent__ability-card">
+              <input type="radio" name="viperRadio" id="viper-info" checked />
+              <label for="viper-info">info</label>
+              <label for="viper-info" class="agent-info">
+                <img src="assets/image/controller-info.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>controller</h2>
+                <p>
+                  Controllers are experts in slicing up dangerous territory to set their team up for success.
+                </p>
+              </span>
+            </div>
+            <div class="agent__ability-card">
+              <input type="radio" name="viperRadio" id="viper-c" />
+              <label for="viper-c">c</label>
+              <label for="viper-c" class="agent-c">
+                <img src="assets/image/viper-c.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>snake bite</h2>
+                <p>
+                  
+Equip a chemical launcher. Fire to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages enemies and applies Vulnerable, doubling incoming damage. Vulnerable lasts for 2 seconds upon leaving the area of effect.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="viperRadio" id="viper-q" />
+              <label for="viper-q">q</label>
+              <label for="viper-q" class="agent-q">
+                <img src="assets/image/viper-q.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>poison cloud</h2>
+                <p>
+                  Equip a gas emitter. Fire to throw the emitter that perpetually remains throughout the round. Re-use the ability to create a toxic gas cloud at the cost of fuel. This ability can be re-used more than once and can be picked up to be redeployed. Poison Orb goes on a 6 second cooldown after being deactivated.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="viperRadio" id="viper-e" />
+              <label for="viper-e">e</label>
+              <label for="viper-e" class="agent-e">
+                <img src="assets/image/viper-e.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>toxic screen</h2>
+                <p>
+                  Equip a gas emitter launcher. Fire to deploy a long line of gas emitters. Re-use the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be re-used more than once. Toxic Screen burns through walls, placing emitters at all valid locations (e.g., the ground) over its length.
+                </p>
+              </span>
+            </div>
+
+            <div class="agent__ability-card">
+              <input type="radio" name="viperRadio" id="viper-x" />
+              <label for="viper-x">x</label>
+              <label for="viper-x" class="agent-x">
+                <img src="assets/image/viper-x.png" alt="" />
+              </label>
+              <span class="agent__info">
+                <h2>viper's pit</h2>
+                <p>
+                  Equip a chemical sprayer. Fire to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range of players and maximum health of enemies inside of it. Hold the ability key to disperse the cloud early. Lasts forever if Viper returns to refuel it every 15 seconds, or remains inside.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div></div>
       </div>
     </section>
   </body>
