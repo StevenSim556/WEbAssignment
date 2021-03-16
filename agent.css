@@ -16,9 +16,36 @@
   scroll-snap-align: start;
   height: calc(100vh - 60px);
   overflow-y: hidden;
-  background: url(assets/image/agent-bg.png) no-repeat center center;
+  background: url(/assets/image/agent-bg.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.agent__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.25;
+  filter: blur(1px);
+}
+
+.agent__container::after {
+  content: "";
+  background: url(/assets/image/leaves.png) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+
+  opacity: 0;
+  z-index: 1;
+  animation: fallen 10000ms linear infinite;
 }
 
 /* agent display */
@@ -92,7 +119,7 @@
 
 .agent__ability-top > h1 {
   font-size: 4vw;
-  color: #eaeeb2;
+  color: #fcffd1;
   font-family: "Roboto", sans-serif;
 }
 
@@ -187,7 +214,6 @@
   height: 38px;
 }
 
-button.active:focus,
 button:active:focus,
 button:focus,
 :focus {
@@ -203,57 +229,57 @@ button:focus,
 
 /* agent display */
 .breach-bg::after {
-  background: url(assets/image/breach-bg.png) no-repeat center center;
+  background: url(/assets/image/breach-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .brimstone-bg::after {
-  background: url(assets/image/brimstone-bg.png) no-repeat center center;
+  background: url(/assets/image/brimstone-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .cypher-bg::after {
-  background: url(assets/image/cypher-bg.png) no-repeat center center;
+  background: url(/assets/image/cypher-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .jett-bg::after {
-  background: url(assets/image/jett-bg.png) no-repeat center center;
+  background: url(/assets/image/jett-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .phoenix-bg::after {
-  background: url(assets/image/phoenix-bg.png) no-repeat center center;
+  background: url(/assets/image/phoenix-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .raze-bg::after {
-  background: url(assets/image/raze-bg.png) no-repeat center center;
+  background: url(/assets/image/raze-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .reyna-bg::after {
-  background: url(assets/image/reyna-bg.png) no-repeat center center;
-  background-size: 450px;
+  background: url(/assets/image/reyna-bg.png) no-repeat center center;
+  background-size: contain;
 }
 
 .sova-bg::after {
-  background: url(assets/image/sova-bg.png) no-repeat center center;
+  background: url(/assets/image/sova-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .sage-bg::after {
-  background: url(assets/image/sage-bg.png) no-repeat center center;
+  background: url(/assets/image/sage-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .omen-bg::after {
-  background: url(assets/image/omen-bg.png) no-repeat center center;
+  background: url(/assets/image/omen-bg.png) no-repeat center center;
   background-size: contain;
 }
 
 .viper-bg::after {
-  background: url(assets/image/viper-bg.png) no-repeat center center;
+  background: url(/assets/image/viper-bg.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -324,6 +350,43 @@ button:focus,
 
   100% {
     transform: translate(-50%, -55%);
+  }
+}
+
+@keyframes fallen {
+  0% {
+    top: -400px;
+    right: 400px;
+    opacity: 0.3;
+    transform: rotate(45deg) scale(1.4);
+  }
+
+  25% {
+    top: -200px;
+    right: 600px;
+    opacity: 0.2;
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  50% {
+    top: 0;
+    right: 800px;
+    opacity: 0.15;
+    transform: rotate(-25deg) scale(1);
+  }
+
+  75% {
+    top: 100px;
+    right: 1000px;
+    opacity: 0.1;
+    transform: rotate(0deg) scale(0.8);
+  }
+
+  100% {
+    top: 200px;
+    right: 1200px;
+    opacity: 0;
+    transform: rotate(25deg) scale(0.4);
   }
 }
 
