@@ -60,13 +60,14 @@ body {
   position: absolute;
   top: 27%;
   left: 0%;
-  right: 0;
+  right: 0%;
   text-align: center;
+  color: #ece8e1;
 }
 
 .title__module h1 {
   font-family: valorant, sans-serif;
-  color: #ffffff;
+  color: #ece8e1;
   font-weight: 400;
   font-size: 8vw;
 }
@@ -86,9 +87,10 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 19px 80px;
   color: #ffffff;
-  background: linear-gradient(to left, #ff4655 50%, #0f1923 50%) right;
+  background: linear-gradient(to left, var(--primary-theme) 50%, #0f1923 50%)
+    right;
   background-size: 200%;
-  transition: 0.15s ease-out;
+  transition: background-position 0.2s linear;
 }
 
 #play__button:hover {
@@ -102,7 +104,7 @@ body {
 }
 
 .info__module h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 100px;
   color: #0f1923;
   border-top: 1px #798079 solid;
@@ -115,7 +117,6 @@ body {
 
 .info {
   width: 40%;
-
   float: left;
   padding: 50px 80px;
 }
@@ -182,6 +183,7 @@ table {
 .credits {
   padding-top: 15px;
   overflow: auto;
+  list-style: none;
 }
 
 @media (min-width: 1000px) {

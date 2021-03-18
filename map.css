@@ -19,9 +19,8 @@ body {
   position: fixed;
   top: 9%;
   left: 8%;
-  font-family: valorant, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
-  letter-spacing: -5px;
 }
 
 /* map selector */
