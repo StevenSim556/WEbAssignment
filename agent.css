@@ -3,7 +3,6 @@
   width: 100vw;
   height: calc(100vh - 60px);
   overflow-x: hidden;
-  overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow-y: hidden;
 }
@@ -55,6 +54,7 @@
   top: 60%;
   left: 45%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   width: 700px;
   height: 700px;
   z-index: 1;
@@ -73,6 +73,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   z-index: 1000;
 }
 
@@ -210,6 +211,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   width: 38px;
   height: 38px;
 }
@@ -342,14 +344,17 @@ button:focus,
 @keyframes agent {
   0% {
     transform: translate(-50%, -47%);
+    -webkit-transform: translate(-50%, -47%);
   }
 
   50% {
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   100% {
     transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -55%);
   }
 }
 
@@ -359,6 +364,7 @@ button:focus,
     right: 400px;
     opacity: 0.3;
     transform: rotate(45deg) scale(1.4);
+    -webkit-transform: rotate(45deg) scale(1.4);
   }
 
   25% {
@@ -366,6 +372,7 @@ button:focus,
     right: 600px;
     opacity: 0.2;
     transform: rotate(0deg) scale(1.2);
+    -webkit-transform: rotate(0deg) scale(1.2);
   }
 
   50% {
@@ -373,6 +380,7 @@ button:focus,
     right: 800px;
     opacity: 0.15;
     transform: rotate(-25deg) scale(1);
+    -webkit-transform: rotate(-25deg) scale(1);
   }
 
   75% {
@@ -380,6 +388,7 @@ button:focus,
     right: 1000px;
     opacity: 0.1;
     transform: rotate(0deg) scale(0.8);
+    -webkit-transform: rotate(0deg) scale(0.8);
   }
 
   100% {
@@ -387,6 +396,7 @@ button:focus,
     right: 1200px;
     opacity: 0;
     transform: rotate(25deg) scale(0.4);
+    -webkit-transform: rotate(25deg) scale(0.4);
   }
 }
 

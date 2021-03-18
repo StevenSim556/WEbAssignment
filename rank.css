@@ -1,0 +1,82 @@
+html {
+  overflow-y: hidden;
+}
+
+#rank {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(/assets/image/rank-background.jpeg);
+  background-attachment: fixed;
+}
+
+#rank::after {
+  content: "RANK";
+  position: absolute;
+  top: 80px;
+  left: 85px;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: valorant, sans-serif;
+}
+
+.iron,
+.bronze,
+.silver,
+.gold,
+.platinum,
+.diamond {
+  display: flex;
+  flex: 0.1 1 3%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.rank__num {
+  display: flex;
+  flex: 0.05 1 3%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 519px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1vw;
+}
+
+img:not(.nav__logo) {
+  margin: 20px;
+  min-width: 50px;
+  transition: transform 200ms ease-in-out;
+}
+
+img:not(.nav__logo):hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.immortal,
+.radiant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  flex: 0.15;
+}
+
+.immortal img,
+.radian img {
+  object-fit: contain;
+  height: 132px;
+}

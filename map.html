@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="map.css" />
+    <title>Valorant Gameplay</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="nav" class="nav">
+      <div class="nav__left">
+        <img
+          onclick="document.location.href='/'"
+          class="nav__logo"
+          src="/assets/image/handler.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="nav__middle">
+        <h1>Valorant</h1>
+      </div>
+      <div class="nav__right">
+        <a href="rank.html">rank</a>
+
+        <a href="agent.html">agents</a>
+
+        <a href="weapon.html">weapons</a>
+
+        <a href="map.html">map</a>
+      </div>
+      <div class="nav__hamburger">
+        <input id="hamburger" type="checkbox" />
+        <label for="hamburger"></label>
+        <div class="nav__menu">
+          <a href="rank.html">rank</a>
+
+          <a href="agent.html">agents</a>
+
+          <a href="weapon.html">weapons</a>
+
+          <a href="map.html">map</a>
+        </div>
+      </div>
+    </section>
+    <div class="map__selector">
+      <form action="#icebox" class="map__selector-button icebox">
+        <button></button>
+      </form>
+      <form action="#bind" class="map__selector-button bind">
+        <button></button>
+      </form>
+      <form action="#haven" class="map__selector-button haven">
+        <button></button>
+      </form>
+      <form action="#split" class="map__selector-button split">
+        <button></button>
+      </form>
+      <form action="#ascent" class="map__selector-button ascent">
+        <button></button>
+      </form>
+    </div>
+
+    <section id="map" class="map">
+      <div class="map__container" id="icebox">
+        <div class="map__container-card icebox"></div>
+        <div class="map__container-box one">
+          <h2>icebox</h2>
+          <p>
+            Your next battleground is a secret Kingdom excavation site overtaken
+            by the arctic. The two plant sites protected by snow and metal
+            require some horizontal finesse.
+          </p>
+        </div>
+      </div>
+      <div class="map__container" id="bind">
+        <div class="map__container-card bind"></div>
+        <div class="map__container-box two">
+          <h2>bind</h2>
+          <p>
+            Two sites. No middle. Gotta pick left or right. What’s it going to
+            be then? Both offer direct paths for attackers and a pair of one-way
+            teleporters make it easier to flank.
+          </p>
+        </div>
+      </div>
+      <div class="map__container" id="haven">
+        <div class="map__container-card haven"></div>
+        <div class="map__container-box three">
+          <h2>haven</h2>
+          <p>
+            Beneath a forgotten monastery, a clamour emerges from rival Agents
+            clashing to control three sites. There’s more territory to control,
+            but defenders can use the extra real estate for aggressive pushes.
+          </p>
+        </div>
+      </div>
+      <div class="map__container" id="split">
+        <div class="map__container-card split"></div>
+        <div class="map__container-box four">
+          <h2>split</h2>
+          <p>
+            If you want to go far, you’ll have to go up. A pair of sites split
+            by an elevated center allows for rapid movement using two rope
+            ascenders. Each site is built with a looming tower vital for
+            control.
+          </p>
+        </div>
+      </div>
+      <div class="map__container" id="ascent">
+        <div class="map__container-card ascent"></div>
+        <div class="map__container-box five">
+          <h2>ascent</h2>
+          <p>
+            An open playground for small wars of position and attrition divide
+            two sites on Ascent. Each site can be fortified by irreversible bomb
+            doors; once they’re down, you’ll have to destroy them or find
+            another way.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
