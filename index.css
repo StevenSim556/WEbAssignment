@@ -1,3 +1,7 @@
+body {
+  background-color: #ece8e1;
+}
+
 /* ================== landing ===================== */
 .landing {
   position: relative;
@@ -51,6 +55,135 @@
 .landing__vid {
   display: flex;
 }
+
+.title__module {
+  position: absolute;
+  top: 27%;
+  left: 0%;
+  right: 0;
+  text-align: center;
+}
+
+.title__module h1 {
+  font-family: valorant, sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 8vw;
+}
+
+.title__module span {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#play__button {
+  background-color: #ff4655;
+  padding: 8px;
+  border: 0;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 19px 80px;
+  color: #ffffff;
+  background: linear-gradient(to left, #ff4655 50%, #0f1923 50%) right;
+  background-size: 200%;
+  transition: 0.15s ease-out;
+}
+
+#play__button:hover {
+  background-position: left;
+  cursor: url("/assets/image/crosshair-1.png"), auto !important;
+}
+
+.info__module {
+  width: 80%;
+  margin: auto;
+}
+
+.info__module h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  color: #0f1923;
+  border-top: 1px #798079 solid;
+}
+
+.info__content {
+  display: flex;
+  padding-top: 40px;
+}
+
+.info {
+  width: 40%;
+
+  float: left;
+  padding: 50px 80px;
+}
+
+.info h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  color: #383e3a;
+  border-left: 1px #798079 solid;
+}
+
+.info p {
+  padding: 50px 0px;
+  font-family: arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 24px;
+  font-weight: 100;
+  color: #768079;
+  border-bottom: 1px #798079 solid;
+}
+
+.gameplay__video {
+  float: right;
+  padding-top: 40px;
+}
+
+.footer {
+  background-color: #111111;
+  height: 180px;
+  color: #7e7e7e;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: arial, sans-serif;
+  padding: 50px 0px;
+}
+
+.footer span {
+  padding: 20px 0px;
+}
+
+table {
+  table-layout: auto;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twitter,
+.facebook,
+.youtube,
+.discord {
+  width: 20px;
+  transition: transform 0.2s;
+}
+
+.twitter:hover,
+.facebook:hover,
+.youtube:hover,
+.discord:hover {
+  transform: scale(1.1);
+}
+
+.credits {
+  padding-top: 15px;
+  overflow: auto;
+}
+
 @media (min-width: 1000px) {
   .landing__vid > .vid2,
   .landing__vid > .vid3 {

@@ -32,21 +32,6 @@
   filter: blur(1px);
 }
 
-.agent__container::after {
-  content: "";
-  background: url(/assets/image/leaves.png) no-repeat center center;
-  background-size: cover;
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 500px;
-  height: 500px;
-
-  opacity: 0;
-  z-index: 1;
-  animation: fallen 10000ms linear infinite;
-}
-
 /* agent display */
 .agent__ability::after {
   content: "";
@@ -355,48 +340,6 @@ button:focus,
   100% {
     transform: translate(-50%, -55%);
     -webkit-transform: translate(-50%, -55%);
-  }
-}
-
-@keyframes fallen {
-  0% {
-    top: -400px;
-    right: 400px;
-    opacity: 0.3;
-    transform: rotate(45deg) scale(1.4);
-    -webkit-transform: rotate(45deg) scale(1.4);
-  }
-
-  25% {
-    top: -200px;
-    right: 600px;
-    opacity: 0.2;
-    transform: rotate(0deg) scale(1.2);
-    -webkit-transform: rotate(0deg) scale(1.2);
-  }
-
-  50% {
-    top: 0;
-    right: 800px;
-    opacity: 0.15;
-    transform: rotate(-25deg) scale(1);
-    -webkit-transform: rotate(-25deg) scale(1);
-  }
-
-  75% {
-    top: 100px;
-    right: 1000px;
-    opacity: 0.1;
-    transform: rotate(0deg) scale(0.8);
-    -webkit-transform: rotate(0deg) scale(0.8);
-  }
-
-  100% {
-    top: 200px;
-    right: 1200px;
-    opacity: 0;
-    transform: rotate(25deg) scale(0.4);
-    -webkit-transform: rotate(25deg) scale(0.4);
   }
 }
 

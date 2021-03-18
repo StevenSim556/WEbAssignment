@@ -9,6 +9,7 @@ html {
   align-items: center;
   background: url(/assets/image/rank-background.jpeg);
   background-attachment: fixed;
+  border: 5px #ff4655 solid;
 }
 
 #rank::after {
